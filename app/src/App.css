@@ -1,0 +1,81 @@
+/*
+* * * * * * * * * VARIABLE CSS * * * * * * * * *
+*/
+:root {
+    /* COLORS */
+    --almond: #EAE0D5;
+    --green: #5B6C5D;
+
+    /* FONT */
+    --title-font: "Oswald", sans-serif;
+    --body-font: "Montserrat", sans-serif;
+
+    /* FONT SIZE */
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --tiny-font-size: 0.625rem;
+
+    /* FONT SIZE */
+    --normal-font-weight: 400;
+    --medium-font-weight: 500;
+    --semi-bold-font-weight: 600;
+    --bold-font-weight: 700;
+}
+
+
+/*
+* * * * * * * * * DEFAULTS * * * * * * * * *
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--almond);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*
+* * * * * * * * * BUTTONS * * * * * * * * *
+*/
+.button {
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    
+}
+
+
+/*
+* * * * * * * * * BREAKPOINTS * * * * * * * * *
+*/
+@media screen and (max-width: 992px) {
+    .container {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}

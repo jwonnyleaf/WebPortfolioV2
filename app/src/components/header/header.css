@@ -1,0 +1,43 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: var(--almond);
+}
+
+.nav {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+.nav__list {
+    display: flex;
+    column-gap: 2rem;
+}
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+}
+.nav__icon,
+.nav__close,
+.nav__toggle {
+    display: none;
+}
+
+.active-link,
+.nav__link:hover {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        top: initial;
+        bottom: 0;
+    }
+}
